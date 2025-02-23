@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Avoider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "container">
+        <header><h1>Milky Way Invader</h1></header>
+        <canvas id="canvas" width="700" height="500">
+        </canvas>
+        <form id = highScoreForm  class="highscore" style="position:absolute; left:550px; top:450px; width:200px">
+            
+            <label for="username" style="color: rgb(34, 0, 255);">User Name</label>
+            <input type="text" name="username" placeholder="Type Username"  id="username" required>
+
+            <input type="hidden" id="highscore" name="highscore">
+            <button type="submit">Add High Score</button>
+            <a href="/highScore.html" style="color: rgbc;">See Scores</a>
+            
+        </form>
+    </div>
+    <div id="Player-container"></div>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

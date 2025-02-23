@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 1px solid black;
+    background-color: blue;
+}
+
+form.highscore {
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.highscore input[type="text"] {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+form.highscore button {
+    width: 100px;
+}
