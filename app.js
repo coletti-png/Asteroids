@@ -8,7 +8,7 @@ const bcrypt = require("bcryptjs");
 const User = require("./Models/Player.js");
 const { register } = require("module");
 const app = express();
-const port = process.env.port||3000;
+const port = process.env.port||5000;
 app.use(express.static(path.join(__dirname, "public")));
 //Set up middleware to parse json requests
 app.use(bodyParser.json());
@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 //MongoDB connection setup
-const mongoURI = "mongodb://localhost:5000/AsteroidsGame";
+const mongoURI = "mongodb://localhost:27017/AsteroidsGame";
 mongoose.connect(mongoURI);
 
 const db = mongoose.connection;
