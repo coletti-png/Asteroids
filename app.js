@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 //MongoDB connection setup
-const mongoURI = "mongodb://localhost:27017/AsteroidsGame";
+const mongoURI = "mongodb://localhost:5000/AsteroidsGame";
 mongoose.connect(mongoURI);
 
 const db = mongoose.connection;
